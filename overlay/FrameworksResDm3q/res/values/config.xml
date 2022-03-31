@@ -1416,4 +1416,10 @@
     <!-- Whether to cleanup fingerprints upon connection to the daemon and when user switches -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
 
+     <!-- The stable device width and height in pixels. If these aren't set to a positive number
+          then the device will use the width and height of the default display the first time it's
+          booted.  -->
+    <integer name="config_stableDeviceDisplayWidth">1440</integer>
+    <integer name="config_stableDeviceDisplayHeight">3088</integer>
+
 </resources>
