@@ -33,6 +33,8 @@ vendor/firmware/dax_param.bin
 # Audio FX modules
 vendor/lib64/soundfx/libaudiosaplus_sec.so
 vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswspatializer.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti
