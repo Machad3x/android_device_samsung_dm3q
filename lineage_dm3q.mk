@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from the device configuration.
 $(call inherit-product, device/samsung/dm3q/device.mk)
 
-# Inherit from the AOSP configuration.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from the LineageOS configuration.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_dm3q
+PRODUCT_NAME := lineage_dm3q
 PRODUCT_DEVICE := dm3q
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-S918B
@@ -27,3 +27,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=samsung/dm3qxxx/dm3q:15/AP3A.240905.015.A2/S918BXXS8DYF1:user/release-keys \
     DeviceProduct=dm3qxxx \
     SystemName=dm3qxxx
+
+# Matrixx Flags
+WITH_GMS := true
+WITH_GMS_COMMS_SUITE := true
+TARGET_SUPPORTS_WALLEFFECT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_STOCK_AICORE := true
